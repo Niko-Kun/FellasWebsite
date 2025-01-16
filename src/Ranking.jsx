@@ -49,33 +49,52 @@ function Ranking() {
                 </motion.div>
             </div>
             <div className="ranking-box">
-                <h2 className="day-title">Rank</h2>
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                >
+                    <h2 className="day-title">Rank</h2>
+                </motion.div>
                 <div className="horizontal-div">
                     <div className="ranked-list">
-                        <ol id="names-list">
-                            <li>Spagno</li>
-                            <li>Niko</li>
-                            <li>Nino</li>
-                            <li>Lux</li>
-                            <li>Ferdinando</li>
-                            <li>Tony&#179;</li>
-                            <li>Diego</li>
-                            <li>Gragna</li>
-                            <li>My Fella</li>
-                        </ol>
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8 }}
+                        >
+                            <ol id="names-list">
+                                <li>Spagno</li>
+                                <li>Niko</li>
+                                <li>Nino</li>
+                                <li>Lux</li>
+                                <li>Ferdinando</li>
+                                <li>Tony&#179;</li>
+                                <li>Diego</li>
+                                <li>Gragna</li>
+                                <li>My Fella</li>
+                            </ol>
+                        </motion.div>
                     </div>
+
                     <div className="ranked-points">
-                        <ul id="points-list" className="no-markers">
-                            <li>0</li> {/* Spagno */}
-                            <li>0</li> {/* Niko */}
-                            <li>0</li> {/* Nino */}
-                            <li>0</li> {/* Lux */}
-                            <li>0</li> {/* Ferdinando */}
-                            <li>0</li> {/* Tony */}
-                            <li>0</li> {/* Diego */}
-                            <li>0</li> {/* Gragna */}
-                            <li>0</li> {/* My Fella */}
-                        </ul>
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8 }}
+                        >
+                            <ul id="points-list" className="no-markers">
+                                <li>0</li> {/* Spagno */}
+                                <li>0</li> {/* Niko */}
+                                <li>0</li> {/* Nino */}
+                                <li>0</li> {/* Lux */}
+                                <li>0</li> {/* Ferdinando */}
+                                <li>0</li> {/* Tony */}
+                                <li>0</li> {/* Diego */}
+                                <li>0</li> {/* Gragna */}
+                                <li>0</li> {/* My Fella */}
+                            </ul>
+                        </motion.div>
                     </div>
                 </div>
             </div>
