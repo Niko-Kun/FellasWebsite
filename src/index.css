@@ -1,0 +1,455 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Funnel Display", "Noto Sans";
+  text-align: center;
+}
+.outside-box {
+  margin-top: 60px;
+}
+.spacer {
+  height: 450px;
+  background-size: cover;
+  background-attachment: fixed; 
+  background-position: center;
+}
+/* Card style */
+.card {
+  text-align: center;
+  font-family: "Noto Sans";
+  border: 1px solid hsla(0, 0%, 0%, 0.1);
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px;
+  max-width: 250px;
+  height: 350px;
+  padding: 20px;
+  background: rgba(255, 255, 255);
+}
+.card .cardImg {
+  max-width: 60%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.card .cardDesc {
+  color: hsl(0, 0%, 35%);
+}
+/* Box style */
+.card-box {
+  padding: 5px;
+  display: inline-block;
+}
+.gradient-box {
+  height: auto;
+  padding: 10px;
+  background: linear-gradient(to bottom, #D01111, #FF6A00);
+}
+.contact-box {
+  height: 20vh;
+  padding: 10px;
+  background: #3A3335;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: center;
+  color: white;
+}
+.rules-box {
+  height: 80vh;
+  padding: 10px;
+  background: linear-gradient(to bottom, #2FDAC3, #1EA896);
+  align-items: center;
+  text-align: center;
+}
+.challenge-box {
+  height: auto;
+  padding: 20px;
+  background: rgb(164,0,226);
+  background: linear-gradient(
+    to bottom, 
+  rgba(164,0,226,1) 0%, 
+  rgba(139,0,233,1) 50%, 
+  rgba(87,0,255,1) 100%);
+}
+.challengeTitle-box {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
+  margin: 0 auto;
+  margin-bottom: 30vh;
+}
+.ranking-box {
+  height: 60vh;
+  background: linear-gradient(to bottom, #cb0707, #fec526);
+  padding: 10vh;
+}
+/* NavigationBar style */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #3A3335;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: white;
+  z-index: 1000;
+}
+.logo button {
+  font-family: "Imperial Script";
+  font-size: 50px;
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+.nav-links button {
+  color: white;
+  text-decoration: none;
+  margin-right: 25px;
+  background: none;
+  border: none;     
+  padding: 0;       
+  outline: none;    
+  cursor: pointer;
+  font-size: 16px;
+}
+.nav-links button:hover {
+  text-decoration: underline;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 25px;
+  background: none;
+  border: none;     
+  padding: 0;       
+  outline: none;    
+  cursor: pointer;
+  font-size: 16px;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
+.hamburger-menu {
+  display: none; /* Non visibile su dispositivi non mobili */
+}
+/* Home section style */
+.hero-section {
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed; 
+  background-position: center;
+  display: flex;
+  flex-direction: column;  /* Imposta la direzione degli oggetti in colonna */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+.hero-title {
+  font-size: 3rem;
+  text-align: left;
+}
+/* Button style */
+.ios-button {
+  background-color: #007AFF; 
+  color: white; 
+  font-size: 16px; 
+  font-weight: 600;
+  padding: 16px 24px; 
+  border: none; 
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+.ios-button:hover {
+  background-color: #0056d6; 
+}
+.ios-button:active {
+  background-color: #003f9e;
+  transform: scale(0.98); 
+}
+.ios-button a {
+  text-decoration: none;
+}
+/* Fellas Rules style */
+.rules {
+  font-size: 40px;
+  padding: 10px;
+}
+.fellas-explanation {
+  display: flex;
+  flex-direction: column; /* Disposizione verticale degli elementi */
+  align-items: center; /* Centra orizzontalmente il contenuto */
+  justify-content: center; /* Centra verticalmente se necessario */
+  text-align: center; /* Centra il testo */
+  margin: 0 auto; /* Assicura che il contenitore sia centrato */
+  width: 350px;
+  font-size: 20px;
+  padding: 0px;
+}
+/* Challenge page style */
+.challenge-bg {
+  height: 60vh;
+  background-size: cover;
+  background-attachment: fixed; 
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.day-title {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+}
+.challenge-title {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+  color: white;
+}
+.challenge-desc {
+  height: auto;
+  border: 7px ridge black;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Ranking page style */
+.ranked-bg {
+  height: 60vh;
+  background-size: cover;
+  background-attachment: fixed; 
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.horizontal-div {
+  display: flex;
+  gap: 20px; /* Spaziatura tra i div */
+  justify-content: center; /* Allineamento orizzontale */
+  align-items: flex-start; /* Allineamento verticale */
+  margin: 20px auto;
+  border: 2px solid black;
+}
+.ranked-list {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  margin: 0 auto;
+  font-size: 22px;
+  padding: 10px;
+}
+.ranked-points {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  margin: 0 auto;
+  font-size: 22px;
+  padding: 10px;
+}
+.no-markers {
+  list-style-type: none;
+}
+/* About Us page style */
+.about-background {
+  height: 60vh;
+  background-size: cover;
+  background-attachment: fixed; 
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.photo-gallery {
+  column-count: 4; /* Numero di colonne */
+  column-gap: 15px; /* Spazio tra le colonne */
+  margin: 20px;
+}
+.photo-item {
+  width: 100%;
+  margin-bottom: 15px;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover; /* Assicura che l'immagine copra la cella */
+}
+.photo-gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile friendly style */
+@media (max-width: 768px) {
+  /* Modifica l'altezza della sezione per schermi più piccoli */
+  .ranked-bg {
+    height: 50vh;
+  }
+
+  /* Imposta il layout per la classe .horizontal-div per schermi più piccoli */
+  .horizontal-div {
+    display: flex;
+    gap: 10px; /* Spaziatura tra i div */
+    justify-content: center; /* Allineamento orizzontale */
+    align-items: flex-start; /* Allineamento verticale */
+    margin: 10px auto;
+    border: 2px solid black;
+  }
+
+  /* Riduci la dimensione del testo per schermi più piccoli */
+  .ranked-list, .ranked-points {
+    font-size: 18px; /* Riduci la dimensione del testo */
+    padding: 8px;
+  }
+
+  /* Modifica la larghezza dei div (a seconda del contenuto) */
+  .ranked-list, .ranked-points {
+    width: 100%;
+  }
+  .ranking-box {
+    height: 70vh;
+    background: linear-gradient(to bottom, #cb0707, #fec526);
+    padding: 10vh;
+  }
+}
+
+/* Media query per schermi molto piccoli (max-width: 480px) */
+@media (max-width: 480px) {
+  .ranked-bg {
+    height: 40vh; /* Ulteriore riduzione dell'altezza per schermi piccoli */
+  }
+
+  /* Adatta ulteriormente il layout della .horizontal-div */
+  .horizontal-div {
+    display: flex;
+    gap: 5px; /* Spaziatura tra i div */
+    justify-content: center; /* Allineamento orizzontale */
+    align-items: flex-start; /* Allineamento verticale */
+    margin: 5px auto;
+    border: 2px solid black;
+  }
+
+  /* Riduci ulteriormente la dimensione del testo per schermi molto piccoli */
+  .ranked-list, .ranked-points {
+    font-size: 16px; /* Ancora più piccolo per schermi di telefonini */
+  }
+
+  .ranked-list, .ranked-points {
+    width: 100%; /* Utilizza l'intera larghezza disponibile */
+  }
+  .ranking-box {
+    height: 70vh;
+    background: linear-gradient(to bottom, #cb0707, #fec526);
+    padding: 10vh;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    height: 50px;
+  }
+
+  .logo button {
+    font-size: 35px; /* Riduci la dimensione del logo */
+  }
+
+  .nav-links {
+    display: none; /* Nascondi i link per i dispositivi mobili */
+    flex-direction: column; /* Disporli verticalmente quando visibili */
+    position: absolute;
+    top: 45px; /* Sotto la navbar */
+    left: 0;
+    width: 100%;
+    background-color: #3A3335;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.active {
+    display: flex; /* Mostra i link quando la navbar è attiva */
+  }
+
+  .nav-links button, .nav-links a {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    width: 100%; /* I link occupano tutta la larghezza */
+  }
+
+  .nav-links button:hover, .nav-links a:hover {
+    text-decoration: none;
+  }
+
+  .hamburger-menu {
+    display: block; /* Mostra l'icona hamburger */
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    background: none;
+    border: none;
+    padding: 10px;
+  }
+
+  .hamburger-menu.open {
+    color: #8e8e8e;
+  }
+}
+/* Media query per schermi molto piccoli (max-width: 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    height: 50px;
+  }
+
+  .logo button {
+    font-size: 30px; /* Ancora più piccolo per schermi piccoli */
+  }
+
+  .nav-links button, .nav-links a {
+    font-size: 16px; /* Ridurre ulteriormente la dimensione del testo */
+  }
+}
+@media (max-width: 768px) {
+  .contact-box {
+    height: 10vh; /* Altezza automatica per adattarsi al contenuto */
+    padding: 20px; /* Maggiore padding su dispositivi mobili */
+    flex-direction: row; /* Mantieni la disposizione orizzontale */
+    justify-content: space-between; /* Spazio tra gli elementi */
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    width: 90%;  /* Rende la card più larga sui dispositivi mobili */
+    height: 350px;  /* Rende l'altezza della card un po' più bassa per i dispositivi mobili */
+    padding: 15px;  /* Riduce il padding per una visualizzazione più compatta */
+    margin: 10px auto;  /* Centra la card e aggiunge margine per distanziare */
+  }
+
+  .card .cardImg {
+    max-width: 50%;  /* Riduce la dimensione dell'immagine */
+    margin-bottom: 15px;  /* Riduce la spaziatura sotto l'immagine */
+  }
+
+  .card .cardDesc {
+    font-size: 14px;  /* Riduce la dimensione del testo per una migliore leggibilità */
+  }
+}
