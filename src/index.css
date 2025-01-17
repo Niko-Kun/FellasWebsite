@@ -299,41 +299,7 @@ body {
 .photo-gallery img:hover {
   transform: scale(1.1);
 }
-
 /* Mobile friendly style */
-@media (max-width: 768px) {
-  /* Modifica l'altezza della sezione per schermi più piccoli */
-  .ranked-bg {
-    height: 50vh;
-  }
-
-  /* Imposta il layout per la classe .horizontal-div per schermi più piccoli */
-  .horizontal-div {
-    display: flex;
-    gap: 10px; /* Spaziatura tra i div */
-    justify-content: center; /* Allineamento orizzontale */
-    align-items: flex-start; /* Allineamento verticale */
-    margin: 10px auto;
-    border: 2px solid black;
-  }
-
-  /* Riduci la dimensione del testo per schermi più piccoli */
-  .ranked-list, .ranked-points {
-    font-size: 18px; /* Riduci la dimensione del testo */
-    padding: 8px;
-  }
-
-  /* Modifica la larghezza dei div (a seconda del contenuto) */
-  .ranked-list, .ranked-points {
-    width: 100%;
-  }
-  .ranking-box {
-    height: 70vh;
-    background: linear-gradient(to bottom, #cb0707, #fec526);
-    padding: 10vh;
-  }
-}
-
 /* Media query per schermi molto piccoli (max-width: 480px) */
 @media (max-width: 480px) {
   .ranked-bg {
@@ -363,8 +329,50 @@ body {
     background: linear-gradient(to bottom, #cb0707, #fec526);
     padding: 10vh;
   }
+  .navbar {
+    height: 50px;
+  }
+
+  .logo button {
+    font-size: 30px; /* Ancora più piccolo per schermi piccoli */
+  }
+
+  .nav-links button {
+    font-size: 16px; /* Ridurre ulteriormente la dimensione del testo */
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 @media (max-width: 768px) {
+  .ranked-bg {
+    height: 50vh;
+  }
+
+  /* Imposta il layout per la classe .horizontal-div per schermi più piccoli */
+  .horizontal-div {
+    display: flex;
+    gap: 10px; /* Spaziatura tra i div */
+    justify-content: center; /* Allineamento orizzontale */
+    align-items: flex-start; /* Allineamento verticale */
+    margin: 10px auto;
+    border: 2px solid black;
+  }
+
+  /* Riduci la dimensione del testo per schermi più piccoli */
+  .ranked-list, .ranked-points {
+    font-size: 18px; /* Riduci la dimensione del testo */
+    padding: 8px;
+  }
+
+  /* Modifica la larghezza dei div (a seconda del contenuto) */
+  .ranked-list, .ranked-points {
+    width: 100%;
+  }
+  .ranking-box {
+    height: 70vh;
+    background: linear-gradient(to bottom, #cb0707, #fec526);
+    padding: 10vh;
+  }
   .navbar {
     height: 50px;
   }
@@ -388,10 +396,12 @@ body {
     display: flex; /* Mostra i link quando la navbar è attiva */
   }
 
-  .nav-links button, .nav-links a {
+  .nav-links button {
     padding: 5px;
     font-size: 18px;
     text-align: center;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%; /* I link occupano tutta la larghezza */
   }
 
@@ -412,22 +422,6 @@ body {
   .hamburger-menu.open {
     color: #8e8e8e;
   }
-}
-/* Media query per schermi molto piccoli (max-width: 480px) */
-@media (max-width: 480px) {
-  .navbar {
-    height: 50px;
-  }
-
-  .logo button {
-    font-size: 30px; /* Ancora più piccolo per schermi piccoli */
-  }
-
-  .nav-links button, .nav-links a {
-    font-size: 16px; /* Ridurre ulteriormente la dimensione del testo */
-  }
-}
-@media (max-width: 768px) {
   .contact-box {
     height: 10vh; /* Altezza automatica per adattarsi al contenuto */
     padding: 20px; /* Maggiore padding su dispositivi mobili */
@@ -435,8 +429,6 @@ body {
     justify-content: space-between; /* Spazio tra gli elementi */
     font-size: 14px;
   }
-}
-@media (max-width: 768px) {
   .card {
     width: 90%;  /* Rende la card più larga sui dispositivi mobili */
     height: 350px;  /* Rende l'altezza della card un po' più bassa per i dispositivi mobili */

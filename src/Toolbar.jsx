@@ -46,7 +46,6 @@ function Toolbar({ setCurrentPage }) {
         <button onClick={() => setCurrentPage('home')}>Home</button>
         <button onClick={() => setCurrentPage('about')}>About Us</button>
         <button onClick={() => setCurrentPage('ranking')}>Ranking</button>
-        <a href="#contact">Contact</a>
       </div>
     </div>
   );
