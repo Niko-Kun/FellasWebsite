@@ -24,24 +24,21 @@ function Challenge() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2 }}
                 >
-                    <h1 className="challenge-title">Fare nella Fella</h1>
+                    <h1 className="challenge-title">{import.meta.env.VITE_ChallengeTitle}</h1>
                 </motion.div>
             </div>
             <div className="challenge-desc">
                 <h3>Regolamento e Spiegazione</h3>
                 <p>
-                    Ciao fellas!
-                    <br/>
-                    {desc}
-                    Il primo che riesce guadagnerà {pt} punti ranked.
-                    <br/>
-                    <br/>
+                    {import.meta.env.VITE_ChallengeRules}
                     NON vale
                     <ul>
-                        <li>Farsi la propria fidanzata</li>
-                        <li>Farsi un uomo</li>
-                        <li>Farsi un Fellas</li>
-                        <li>Fermarsi al bacio</li>
+                        <li>{import.meta.env.ChallengeCondition1}</li>
+                        <li>{import.meta.env.ChallengeCondition2}</li>
+                        <li>{import.meta.env.ChallengeCondition3}</li>
+                        <li>{import.meta.env.ChallengeCondition4}</li>
+                        <li>{import.meta.env.ChallengeCondition5}</li>
+                        <li>{import.meta.env.ChallengeCondition6}</li>
                     </ul>
                 </p>
             </div>

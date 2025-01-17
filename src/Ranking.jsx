@@ -84,15 +84,15 @@ function Ranking() {
                             transition={{ duration: 0.8 }}
                         >
                             <ul id="points-list" className="no-markers">
-                                <li>0</li> {/* Spagno */}
-                                <li>0</li> {/* Niko */}
-                                <li>0</li> {/* Nino */}
-                                <li>0</li> {/* Lux */}
-                                <li>0</li> {/* Ferdinando */}
-                                <li>0</li> {/* Tony */}
-                                <li>0</li> {/* Diego */}
-                                <li>0</li> {/* Gragna */}
-                                <li>0</li> {/* My Fella */}
+                                <li>{import.meta.env.VITE_SpagnoPoints}</li> {/* Spagno */}
+                                <li>{import.meta.env.VITE_NikoPoints}</li> {/* Niko */}
+                                <li>{import.meta.env.VITE_NinoPoints}</li> {/* Nino */}
+                                <li>{import.meta.env.VITE_LuxPoints}</li> {/* Lux */}
+                                <li>{import.meta.env.VITE_FerdinandoPoints}</li> {/* Ferdinando */}
+                                <li>{import.meta.env.VITE_TonyPoints}</li> {/* Tony */}
+                                <li>{import.meta.env.VITE_DiegoPoints}</li> {/* Diego */}
+                                <li>{import.meta.env.VITE_GragnaPoints}</li> {/* Gragna */}
+                                <li>{import.meta.env.VITE_StefanoPoints}</li> {/* My Fella */}
                             </ul>
                         </motion.div>
                     </div>
