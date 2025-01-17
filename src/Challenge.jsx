@@ -31,6 +31,7 @@ function Challenge() {
                 <h3>Regolamento e Spiegazione</h3>
                 <p>
                     {import.meta.env.VITE_ChallengeRules}
+                    <br/>
                     NON vale
                     <ul>
                         <li>{import.meta.env.ChallengeCondition1}</li>
